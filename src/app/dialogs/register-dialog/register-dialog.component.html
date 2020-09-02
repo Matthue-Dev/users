@@ -1,27 +1,31 @@
 <mat-form-field appearance="outline">
+    <mat-label>Name</mat-label>
+    <input matInput>
+    <mat-icon matSuffix>face</mat-icon>
+</mat-form-field>
+
+<mat-form-field appearance="outline">
     <mat-label>Email</mat-label>
-    <input matInput [formControl]="email">
+    <input matInput>
     <mat-icon matSuffix>mail_outline</mat-icon>
 </mat-form-field>
 
 <mat-form-field appearance="outline">
     <mat-label>Password</mat-label>
-    <input matInput [formControl]="password">
+    <input matInput>
     <mat-icon matSuffix>lock</mat-icon>
 </mat-form-field>
 
-<mat-checkbox [formControl]="remember">Remember me</mat-checkbox>
-
-<button mat-raised-button (click)="login()" [disabled]="!form.valid" color="primary" class="login"><h2>Login</h2></button>
+<button mat-raised-button color="primary" class="register"><h2>Register</h2></button>
 
 <mat-divider></mat-divider>
 
 <div class="alternate">
     <button mat-fab color="primary"><mat-icon svgIcon="apple"></mat-icon></button>
+
     <button mat-fab color="primary"><mat-icon svgIcon="facebook"></mat-icon></button>
+
     <button mat-fab color="primary"><mat-icon svgIcon="google"></mat-icon></button>
 </div>
 
-<button mat-button (click)="emitState(state.register)" color="primary">Creat an account</button>
-
-<button mat-button (click)="emitState(state.help)" color="primary">Can't sign in?</button>
+<button mat-button color="primary">Already have an account? Sign in</button>

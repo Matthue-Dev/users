@@ -14,11 +14,15 @@ import { environment } from './../environments/environment';
 import { AppComponent } from './app.component';
 import { LoginDialogComponent } from './dialogs/login-dialog/login-dialog.component';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './login/login.component';
+import { RegisterDialogComponent } from './dialogs/register-dialog/register-dialog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginDialogComponent
+    LoginDialogComponent,
+    LoginComponent,
+    RegisterDialogComponent
   ],
   imports: [
     AppRoutingModule,
